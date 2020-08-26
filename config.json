@@ -2,7 +2,7 @@
   "name": "VantWhite",
   "version": "1.0.0",
   "author": "nuoea&xiaoai",
-  "repository": "https://github.com/insdram/gridea-theme-vant",
+  "repository": "https://github.com/xiaoai7904/gridea-theme-vant-white",
   "customConfig": [{
       "name": "copy",
       "label": "开始时间",

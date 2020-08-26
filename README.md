@@ -1,5 +1,5 @@
 ## gridea-theme-vant-white
-> 该主题是在fork [gridea-theme-vant](https://github.com/insdram/gridea-theme-vant) 删除了暗黑模式主题,默认为白色主题
+> 该主题是fork [gridea-theme-vant](https://github.com/insdram/gridea-theme-vant)主题进行了修改
 
 ### 更新
 
