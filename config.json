@@ -1,7 +1,7 @@
 {
-  "name": "Vant",
+  "name": "VantWhite",
   "version": "1.0.0",
-  "author": "nuoea",
+  "author": "nuoea&xiaoai",
   "repository": "https://github.com/insdram/gridea-theme-vant",
   "customConfig": [{
       "name": "copy",
@@ -116,6 +116,14 @@
         { "label": "描述", "name": "description", "type": "textarea", "value": "" }
       ],
       "note": ""
+    },
+    {
+      "name": "ga",
+      "label": "跟踪 ID",
+      "group": "谷歌统计",
+      "value": "",
+      "type": "input",
+      "note": "UA-xxxxxxxxx-x"
     }
   ]
 }

@@ -48,12 +48,6 @@ hr {
   border-top: 1px solid @light-border;
 }
 
-.theme-dark {
-  hr {
-    border-top: 1px solid @dark-border;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -62,7 +56,7 @@ h5,
 h6 {
   color: @dark-black;
   font-weight: 500;
-  font-family: "PingFangSC-Medium", "PingFangSC-Regular", "PingFang SC", "Microsoft YaHei", Arial, Helvetica, "WenQuanYi Micro Hei", "tohoma,sans-serif";
+  font-family: "PingFangSC-Medium","PingFangSC-Regular", "PingFang SC", "Microsoft YaHei", Arial, Helvetica, "WenQuanYi Micro Hei", "tohoma,sans-serif";
   -webkit-transition: all .3s linear;
   -moz-transition: all .3s linear;
   -o-transition: all .3s linear;
@@ -78,18 +72,6 @@ h5,
 h6 {
   margin: 1.6em 0 0.6em;
   cursor: default;
-}
-
-.theme-dark {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: @dark-white;
-  }
 }
 
 p {
@@ -124,36 +106,37 @@ blockquote {
   border-left: 4px solid @main-border;
 }
 
-.theme-dark {
-
-  blockquote {
-    margin: 1.5rem 0;
-    padding-left: 0.5rem;
-    border-left: 4px solid @dark-border;
-  }
-}
-
 blockquote p {
   margin: 0;
 }
 
 pre {
-  margin: 1.6em 0;
-  padding: 24px 18px;
-  border-radius: 4px;
-  background: @tag-bg;
-  white-space: pre-wrap;
+  // margin: 1.6em 0;
+  // padding: 24px 18px;
+  // border-radius: 4px;
+  // background: @tag-bg;
+  // white-space: pre-wrap;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 6px;
 }
 
 code {
-  margin: 0 4px;
-  padding: 3px 8px 2px;
-  border: 1px solid @tag-border;
-  border-radius: 4px;
-  background-color: @tag-bg;
-  vertical-align: middle;
-  font-size: 12px;
+  // margin: 0 4px;
+  // padding: 3px 8px 2px;
+  // border: 1px solid @tag-border;
+  // border-radius: 4px;
+  // background-color: @tag-bg;
+  // vertical-align: middle;
+  // font-size: 12px;
   font-family: Inconsolata, monospace, sans-serif;
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 6px;
 }
 
 pre code {
@@ -161,17 +144,6 @@ pre code {
   padding: 0;
   border: none;
   font-size: 13px;
-}
-
-.theme-dark {
-  pre {
-    background: #292a2d;
-  }
-  
-  code {
-    border: 1px solid @dark-border;
-    background-color: #292a2d;
-  }
 }
 
 figure {
@@ -282,13 +254,7 @@ mark {
   -ms-transition: all 0.3s ease-out;
   flex-direction: column;
   flex: auto;
-
-  &.theme-dark {
-    background: @dark-bg;
-    color: @light-white;
-  }
 }
-
 
 
 @import './components/header';

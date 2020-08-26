@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <div class="layout theme-dark">
+  <div class="layout">
     <%- include('./includes/header') %>
     <%- include('./includes/menu') %>
 
@@ -252,10 +252,20 @@
                           </div>
                         </div>
 
-                        <div class="layout-comments"></div>
-                        <% if (site.customConfig.valineID && site.customConfig.valineKey) { %>
-                        <%- include('./includes/valine') %>
-                        <% } %>
+                        <div class="layout-comments" id="comments">
+                          <% if (site.customConfig.valineID && site.customConfig.valineKey) { %>
+                            <%- include('./includes/valine') %>
+                            <% } %>
+                            <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
+                              <% if (commentSetting.commentPlatform === 'gitalk') { %>
+                                <%- include('./includes/gitalk') %>
+                              <% } %>
+                        
+                              <% if (commentSetting.commentPlatform === 'disqus') { %>
+                                <%- include('./includes/disqus') %>
+                              <% } %>
+                            <% } %>
+                        </div>
                       </div>
                     </div>
 
